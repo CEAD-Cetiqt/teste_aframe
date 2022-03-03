@@ -11,28 +11,27 @@
 		
 		
 	<a-assets>
-		<a-asset-items id="model" src="modelo_3d/ba.gltf"></a-asset-items>
-		<a-image id="360" src="img/Planta.jpg"></a-image>
+		<a-asset-items id="model" src="Modelo 3d/te2.gltf"></a-asset-items>
+		<a-image id="360" src="Img/Planta02.jpg"></a-image>
 		
 		</a-assets>
 		
 	<a-entity id="rig" position="25 10 0">
   <a-entity id="camera" camera look-controls></a-entity>
 </a-entity>
-		<!a-entidy gltf-model="#model"
-				  postion="0 0 5"><!/a-entidy>
-	
-		<a-gltf-model src="#model"
-					  Position="10 -10 50"
-					  Scale="0.5 0.5 0.5"
+		
+		<a-entity gltf-model="#model"
+					  Position="50 -12 -50"
+					  Scale="0.8 0.8 0.8"
 					  Rotation="0 -90 0"
-					  animation="autoplay">
-		</a-gltf-model>
+					  animation-mixer="timeScale:1">
+			</a-entity>
+	
 			
 		
-		<a-sky src="#360">
+		<a-sky src="#360"
+			   rotation="0 5 0">
 		</a-sky>
 	</a-scene>
 </body>
 </html>
-sd
